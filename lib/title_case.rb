@@ -3,6 +3,7 @@
 
 class String
   define_method(:title_case) do
-    self.capitalize()
+    self.capitalize!()
+    self.split()
   end
 end
