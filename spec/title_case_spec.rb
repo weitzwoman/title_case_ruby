@@ -7,6 +7,9 @@ describe('String#title_case') do
     expect(("shoe").title_case()).to(eq(["Shoe"]))
   end
   it('returns array for multiple word string') do
-    expect(("hey there you").title_case()).to(eq(["Hey", "there", "you"]))
+    expect(("hey there you").title_case()).to(eq(["Hey", "There", "You"]))
+  end
+  it('capitalizes each word of an array') do
+    expect(("hey there you").title_case()).to(eq(["Hey", "There", "You"]))
   end
 end

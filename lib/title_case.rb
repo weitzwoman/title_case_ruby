@@ -3,7 +3,10 @@
 
 class String
   define_method(:title_case) do
-    self.capitalize!()
-    self.split()
+    userArray = self.split()
+    userArray.each() do |word|
+      word.capitalize!()
+    end
+    userArray
   end
 end
