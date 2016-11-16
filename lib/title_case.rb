@@ -11,6 +11,6 @@ class String
         end
       outputArray.first.capitalize!()
     end
-    outputArray
+    outputArray.join(" ")
   end
 end
